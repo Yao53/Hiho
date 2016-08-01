@@ -7,9 +7,31 @@
 //
 
 #include <iostream>
+#include <string>
+
+using namespace std;
+
+class TreeNode{
+	int wordCount;
+	bool isWord;
+	TreeNode *nextChar[26];
+}TrieTreeNode;
+
+void initTree()
 
 int main(int argc, const char * argv[]) {
-	// insert code here...
+	int n, m;
+	string s;
+	cin >> n;
+	while(n--){
+		cin >> s;
+		initTree(s);
+	}
+	cin >> m;
+	while(m--){
+		int wordCount = search(s);
+		cout << wordCount << endl;
+	}
 	std::cout << "Hello, World!\n";
     return 0;
 }
