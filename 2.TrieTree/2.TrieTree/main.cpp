@@ -11,27 +11,49 @@
 
 using namespace std;
 
-class TreeNode{
+class TrieTreeNode{
 	int wordCount;
 	bool isWord;
-	TreeNode *nextChar[26];
-}TrieTreeNode;
+public:
+	TrieTreeNode *next[26];
+	TrieTreeNode(int wc, bool iw):wordCount(wc), isWord(iw){
+		for (int i = 0; i < 26; ++i)
+			next[i] = NULL;
+	}
+	~TrieTreeNode(){
+		
+	}
+};
 
-void initTree()
+void initTree(TrieTreeNode* head, string& s){
+	
+}
+
+int search(TrieTreeNode* head, string &s){
+	return 0;
+}
+void delTree(TrieTreeNode* head){
+	for (int i = 0; i < 26; i++){
+		if (head->next[i] != NULL)
+			delTree(head->next[i]);
+	}
+	delete head;
+}
 
 int main(int argc, const char * argv[]) {
 	int n, m;
 	string s;
 	cin >> n;
+	TrieTreeNode *head = new TrieTreeNode(0, 0);
 	while(n--){
 		cin >> s;
-		initTree(s);
+		initTree(head, s);
 	}
 	cin >> m;
 	while(m--){
-		int wordCount = search(s);
+		int wordCount = search(head, s);
 		cout << wordCount << endl;
 	}
-	std::cout << "Hello, World!\n";
+	delTree(head);
     return 0;
 }
