@@ -9,7 +9,10 @@
 #include <iostream>
 
 using namespace std;
-
+void ZeroOnePack(int *dp, int c, int w, int M){
+	for (int v = M; v >= c; --v)
+		dp[v] = max(dp[v], dp[v - c] + w);
+}
 
 int main(int argc, const char * argv[]) {
 	int N, M;
@@ -17,17 +20,15 @@ int main(int argc, const char * argv[]) {
 	int *c = (int*)malloc(N * sizeof(int));
 	int *w = (int*)malloc(N * sizeof(int));
 	
-	int *dp = (int*)malloc(M * sizeof(int));
-	memset(dp, 0, M * sizeof(int));
+	int *dp = (int*)malloc((M + 1) * sizeof(int));
+	memset(dp, 0, (M + 1) * sizeof(int));
 	
 	for (int i = 0; i < N; ++i)
-		cin >> w[i] >> c[i];
-	for (int cap = 1; cap < M; ++i){
-		for (int item = N - 1; item >= c[cap]; --item){
-			
-		}
+		cin >> c[i] >> w[i];
+	for (int i = 0; i < N; ++i){
+		ZeroOnePack(dp, c[i], w[i], M);
 	}
-	cout << dp[0] << endl;
+	cout << dp[M] << endl;
 	free(c);
 	free(w);
 	free(dp);
