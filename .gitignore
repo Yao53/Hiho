@@ -28,4 +28,6 @@
 *.out
 *.app
 
-
+# Projects files
+*.xcodeproj
+*.xcuserstate
