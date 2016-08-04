@@ -14,7 +14,8 @@ using namespace std;
 
 struct Node{
 	int cost;
-	
+	Node *lc, *rc;
+	Node():cost(0),lc(NULL), rc(NULL){}
 };
 
 int main(int argc, const char * argv[]) {
