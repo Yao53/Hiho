@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  7.01Knapsack
+//  6.01Knapsack
 //
 //  Created by Yao on 16/8/1.
 //  Copyright © 2016年 San. All rights reserved.

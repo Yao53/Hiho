@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		20D4283E1D4F963D002B1977 /* 7.01Knapsack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 7.01Knapsack; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D4283E1D4F963D002B1977 /* 6.01Knapsack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 6.01Knapsack; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D428411D4F963D002B1977 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,25 +49,25 @@
 		20D4283F1D4F963D002B1977 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20D4283E1D4F963D002B1977 /* 7.01Knapsack */,
+				20D4283E1D4F963D002B1977 /* 6.01Knapsack */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		20D428401D4F963D002B1977 /* 7.01Knapsack */ = {
+		20D428401D4F963D002B1977 /* 6.01Knapsack */ = {
 			isa = PBXGroup;
 			children = (
 				20D428411D4F963D002B1977 /* main.cpp */,
 			);
-			path = 7.01Knapsack;
+			path = 6.01Knapsack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20D4283D1D4F963D002B1977 /* 7.01Knapsack */ = {
+		20D4283D1D4F963D002B1977 /* 6.01Knapsack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20D428451D4F963D002B1977 /* Build configuration list for PBXNativeTarget "7.01Knapsack" */;
+			buildConfigurationList = 20D428451D4F963D002B1977 /* Build configuration list for PBXNativeTarget "6.01Knapsack" */;
 			buildPhases = (
 				20D4283A1D4F963D002B1977 /* Sources */,
 				20D4283B1D4F963D002B1977 /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = 7.01Knapsack;
-			productName = 7.01Knapsack;
-			productReference = 20D4283E1D4F963D002B1977 /* 7.01Knapsack */;
+			name = 6.01Knapsack;
+			productName = 6.01Knapsack;
+			productReference = 20D4283E1D4F963D002B1977 /* 6.01Knapsack */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +96,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 20D428391D4F963D002B1977 /* Build configuration list for PBXProject "7.01Knapsack" */;
+			buildConfigurationList = 20D428391D4F963D002B1977 /* Build configuration list for PBXProject "6.01Knapsack" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,7 +108,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				20D4283D1D4F963D002B1977 /* 7.01Knapsack */,
+				20D4283D1D4F963D002B1977 /* 6.01Knapsack */,
 			);
 		};
 /* End PBXProject section */
@@ -223,7 +223,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20D428391D4F963D002B1977 /* Build configuration list for PBXProject "7.01Knapsack" */ = {
+		20D428391D4F963D002B1977 /* Build configuration list for PBXProject "6.01Knapsack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20D428431D4F963D002B1977 /* Debug */,
@@ -232,7 +232,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20D428451D4F963D002B1977 /* Build configuration list for PBXNativeTarget "7.01Knapsack" */ = {
+		20D428451D4F963D002B1977 /* Build configuration list for PBXNativeTarget "6.01Knapsack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20D428461D4F963D002B1977 /* Debug */,
