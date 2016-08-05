@@ -25,7 +25,7 @@ int main(){
 			s += "#";
 		}
 		s += "%";
-		cout<< s<<endl;
+//		cout<< s <<endl;
 		int maxLen = 0;
 		int maxRegion = 0;
 		int maxCenter = 1;
