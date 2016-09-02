@@ -9,21 +9,40 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <iostream>
+#include <algorithm>
+#include <map>
+#include <set>
+#include <queue>
+
+#define MAX(x,y) ((x)>(y)?(x):(y))
+#define SWAP(a, b) (a ^= b, b ^= a, a ^= b)
 
 using namespace std;
 
-struct Node{
-	int cost;
-	Node *lc, *rc;
-	Node():cost(0),lc(NULL), rc(NULL){}
+typedef long long ll;
+
+int score[101];
+
+
+struct TreeNode{
+	int val;
+	vector<int> children;
+	TreeNode(int v):val(v){}
 };
+
+TreeNode* initTree(vector<int> &data, int idx){
+	if (idx >= data.size()) return NULL;
+	TreeNode* root = new TreeNode(data[idx]);
+	return root;
+}
 
 int main(int argc, const char * argv[]) {
 	
 	int N, M;
 	cin >> N >> M;
-	int *c = (int *)malloc(N * sizeof(int));
+	for (int i = 0; i < N; ++i)
+		cin >> score[i];
 	
-	free(c);
-    return 0;
+	return 0;
 }
